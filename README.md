@@ -1,4 +1,14 @@
-# Kinesis Advantage 360 Pro ZMK Config
+# psanford's ADV360-PRO-ZMK config
+
+This is psanford's ADV360 PRO config.
+
+Load instructions:
+
+- Connect left side to usb
+- Mod-Hotkey1 to switch to bootloader for left side
+- Copy left.uf2 to USB drive
+- Mod-Hotkey3 to switch to bootloader for right side
+- Copy right.uf2 to USB drive
 
 ## Modifying the keymap
 
@@ -87,7 +97,7 @@ Follow the programming instruction on page 8 of the [Quick Start Guide](https://
 1. Unplug the right side keyboard and turn it back on.
 1. Enjoy!
 
-> Note: There are also physical reset buttons on both keyboards which can be used to enter and exit the bootloader mode. Their location is described in section 2.7 on page 9 in the [User Manual](https://kinesis-ergo.com/wp-content/uploads/Advantage360-ZMK-KB360-PRO-Users-Manual-v3-10-23.pdf) and use is described in section 5.9 on page 14. 
+> Note: There are also physical reset buttons on both keyboards which can be used to enter and exit the bootloader mode. Their location is described in section 2.7 on page 9 in the [User Manual](https://kinesis-ergo.com/wp-content/uploads/Advantage360-ZMK-KB360-PRO-Users-Manual-v3-10-23.pdf) and use is described in section 5.9 on page 14.
 
 > Note: Some operating systems wont always treat the drive as ejected after the settings-reset file is flashed or may throw a spurious error, this doesn't mean that the flashing process has failed.
 
@@ -99,7 +109,7 @@ Updating from V2.0 based firmwares to V3.0 based firmwares can be a rather compl
 
 ## Versioning
 
-Starting on 11/15/2023 the Advantage 360 Pro will now automatically record the compilation date, branch and Git commit hash in a macro that can be accessed with Mod+V. This will type out the following string: YYYYMMDD-XXXX-YYYYYY, where XXXX is the first 4 characters of the Git branch and YYYYYY is the Git commit hash. In addition to this the builds compiled by GitHub actions are now timestamped and also record the commit hash in the filename. 
+Starting on 11/15/2023 the Advantage 360 Pro will now automatically record the compilation date, branch and Git commit hash in a macro that can be accessed with Mod+V. This will type out the following string: YYYYMMDD-XXXX-YYYYYY, where XXXX is the first 4 characters of the Git branch and YYYYYY is the Git commit hash. In addition to this the builds compiled by GitHub actions are now timestamped and also record the commit hash in the filename.
 
 ## N-Key Rollover
 
@@ -155,4 +165,3 @@ Further support resources can be found on Kinesis.com:
 
 In the event of a hardware issue it may be necessary to open a support ticket directly with Kinesis as opposed to a GitHub issue in this repository.
 * https://kinesis-ergo.com/support/kb360pro/#ticket
-
