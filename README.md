@@ -1,4 +1,14 @@
-# Kinesis Advantage 360 Pro ZMK Config
+# psanford's ADV360-PRO-ZMK config
+
+This is psanford's ADV360 PRO config.
+
+Load instructions:
+
+- Connect left side to usb
+- Mod-Hotkey1 to switch to bootloader for left side
+- Copy left.uf2 to USB drive
+- Mod-Hotkey3 to switch to bootloader for right side
+- Copy right.uf2 to USB drive
 
 ## Modifying the keymap
 
@@ -42,7 +52,7 @@ Certain ZMK features (e.g. combos) require knowing the exact key positions in th
 
 ### Cleanup
 
-The built docker container and compiled firmware files can be deleted with `make clean`. This might be necessary if you updated your fork from V2.0 to V3.0 and are encountering build failures. 
+The built docker container and compiled firmware files can be deleted with `make clean`. This might be necessary if you updated your fork from V2.0 to V3.0 and are encountering build failures.
 
 ## Flashing firmware
 
@@ -62,7 +72,7 @@ Follow the programming instruction on page 8 of the [Quick Start Guide](https://
 1. Unplug the right side keyboard and turn it back on.
 1. Enjoy!
 
-> Note: There are also physical reset buttons on both keyboards which can be used to enter and exit the bootloader mode. Their location is described in section 2.7 on page 9 in the [User Manual](https://kinesis-ergo.com/wp-content/uploads/Advantage360-ZMK-KB360-PRO-Users-Manual-v3-10-23.pdf) and use is described in section 5.9 on page 14. 
+> Note: There are also physical reset buttons on both keyboards which can be used to enter and exit the bootloader mode. Their location is described in section 2.7 on page 9 in the [User Manual](https://kinesis-ergo.com/wp-content/uploads/Advantage360-ZMK-KB360-PRO-Users-Manual-v3-10-23.pdf) and use is described in section 5.9 on page 14.
 
 > Note: Some operating systems wont always treat the drive as ejected after the settings-reset file is flashed, this doesn't mean that the flashing process has failed.
 
@@ -74,7 +84,7 @@ Updating from V2.0 based firmwares to V3.0 based firmwares can be a rather compl
 
 ## Bluetooth LE Privacy
 
-Since the update on 20/10/2023, BLE privacy is now disabled by default and due to an update in upstream ZMK cannot be enabled again as it will cause issues for the split halves connecting to each other. 
+Since the update on 20/10/2023, BLE privacy is now disabled by default and due to an update in upstream ZMK cannot be enabled again as it will cause issues for the split halves connecting to each other.
 
 Recent updates to MacOS have improved the behaviour for devices without BLE privacy and caused regressions with privacy enabled (e.g. being unable to enter the password on the filevault screen) so BLE privacy is not necessary any more.
 
