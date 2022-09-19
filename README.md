@@ -1,4 +1,15 @@
-# ADV360-PRO-ZMK
+# psanford's ADV360-PRO-ZMK config
+
+This is psanford's ADV360 PRO config.
+
+Load instructions:
+
+- Connect left side to usb
+- Mod-Hotkey1 to switch to bootloader for left side
+- Copy left.uf2 to USB drive
+- Mod-Hotkey3 to switch to bootloader for right side
+- Copy right.uf2 to USB drive
+
 
 ## To build Firmware in GitHub Actions
 
