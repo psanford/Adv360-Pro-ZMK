@@ -1,3 +1,33 @@
+  bt0_def: bt0_def {
+    compatible = "zmk,behavior-macro";
+    label = "bt0_def";
+    #binding-cells = <0>;
+    bindings = <&bt BT_SEL 0>, <&to 0>;
+  };
+  bt1_def: bt1_def {
+    compatible = "zmk,behavior-macro";
+    label = "bt1_def";
+    #binding-cells = <0>;
+    bindings = <&bt BT_SEL 1>, <&to 0>;
+  };
+  bt2_alt: bt2_alt {
+    compatible = "zmk,behavior-macro";
+    label = "bt2_alt";
+    #binding-cells = <0>;
+    bindings = <&bt BT_SEL 2>, <&to 4>;
+  };
+  bt3_def: bt3_def {
+    compatible = "zmk,behavior-macro";
+    label = "bt3_def";
+    #binding-cells = <0>;
+    bindings = <&bt BT_SEL 3>, <&to 0>;
+  };
+  bt4_def: bt4_def {
+    compatible = "zmk,behavior-macro";
+    label = "bt4_def";
+    #binding-cells = <0>;
+    bindings = <&bt BT_SEL 4>, <&to 0>;
+  };
   macro_quotes: macro_quotes {
     compatible = "zmk,behavior-macro";
     label = "macro_quotes";
