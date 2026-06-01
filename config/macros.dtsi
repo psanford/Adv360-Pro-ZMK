@@ -29,7 +29,7 @@
     bindings
       = <&macro_tap &bt BT_SEL 2>
       , <&macro_pause_for_release>
-      , <&macro_tap &to 1>;
+      , <&macro_tap &to 4>;
   };
   bt3_def: bt3_def {
     compatible = "zmk,behavior-macro";
